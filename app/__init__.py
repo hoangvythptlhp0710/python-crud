@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_bootstrap import Bootstrap
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
@@ -13,11 +14,10 @@ def create_app(config_name):
     app.config.from_object(app_config[config_name])
     app.config.from_pyfile('config.py')
     db.init_app(app)
-
     # v1
-    @app.route('/')
-    def hello_world():
-        return 'Hello, World!'
+    # @app.route('/')
+    # def hello_world():
+    #     return 'Hello, World!'
 
     # v2
     login_manager.init_app(app)
@@ -26,8 +26,18 @@ def create_app(config_name):
 
     # v3
     migrate = Migrate(app, db)
+
+    Bootstrap(app)
     from app import models
 
 
+    from .admin import admin as admin_blueprint
+    app.register_blueprint(admin_blueprint, url_prefix='/admin')
+
+    from .auth import auth as auth_blueprint
+    app.register_blueprint(auth_blueprint)
+
+    from .home import home as home_blueprint
+    app.register_blueprint(home_blueprint)
 
     return app

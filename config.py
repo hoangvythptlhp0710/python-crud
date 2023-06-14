@@ -1,22 +1,25 @@
+# config.py
+
 class Config(object):
     """
-    Cấu hình chung
+    Common configurations
     """
 
+    # Put any configurations here that are common across all environments
 
-#     Đưa các config env vào đây
 
 class DevelopmentConfig(Config):
     """
-    Cấu hình môi trường development
+    Development configurations
     """
+
     DEBUG = True
     SQLALCHEMY_ECHO = True
 
 
 class ProductionConfig(Config):
     """
-    Cấu hình môi trường production
+    Production configurations
     """
 
     DEBUG = False
