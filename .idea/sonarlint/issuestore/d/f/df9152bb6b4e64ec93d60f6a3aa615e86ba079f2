@@ -1,0 +1,5 @@
+
+“python:S101="wRename class "MySQLExecutionContext_mysqldb" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(άƒΏσωÿÿÿÿ
+‹python:S101F"oRename class "MySQLCompiler_mysqldb" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(Ό§Òξÿÿÿÿÿ
+python:S101J"yRename class "MySQLIdentifierPreparer_mysqldb" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(θαύ
+…python:S101N"nRename class "MySQLDialect_mysqldb" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(ΑΝ

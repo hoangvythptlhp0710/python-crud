@@ -1,0 +1,5 @@
+
+rpython:S3776³"TRefactor this function to reduce its Cognitive Complexity from 35 to the 15 allowed.(Η“ζόÿÿÿÿ
+epython:S116Β"MRename this field "Query" to match the regular expression ^[_a-z][_a-z0-9]*$.(»Ϋβϋ
+epython:S116Λ"MRename this field "Model" to match the regular expression ^[_a-z][_a-z0-9]*$.(‚³°Ϋ
+rpython:S3776ι"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(σχ²Ιÿÿÿÿÿ
